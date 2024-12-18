@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anzef\\OneDrive\\Namizje\\Crke_seminarska\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93D7E62F-6C04-45A9-A1B2-6E52291354C6}|Crke_seminarska.vcxproj|C:\\Users\\anzef\\OneDrive\\Namizje\\Crke_seminarska\\Crke_seminarska.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{93D7E62F-6C04-45A9-A1B2-6E52291354C6}|Crke_seminarska.vcxproj|solutionrelative:Crke_seminarska.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Crke_seminarska.cpp",
+              "DocumentMoniker": "C:\\Users\\anzef\\OneDrive\\Namizje\\Crke_seminarska\\Crke_seminarska.cpp",
+              "RelativeDocumentMoniker": "Crke_seminarska.cpp",
+              "ToolTip": "C:\\Users\\anzef\\OneDrive\\Namizje\\Crke_seminarska\\Crke_seminarska.cpp",
+              "RelativeToolTip": "Crke_seminarska.cpp",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAAAIIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-17T16:55:30.727Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
