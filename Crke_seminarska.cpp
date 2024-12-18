@@ -9,7 +9,7 @@
 #include <algorithm>
 #include <string>
 
-std::string files[] = {"crke01.in", "crke02.in", "crke03.in", "crke04.in", "crke05.in", "crke06.in" };
+std::string files[] = {"crke01.in", "crke02.in", "crke03.in", "crke04.in", "crke05.in", "crke06.in", "crke07.in" };
 
 struct Pair {
     std::string first;
@@ -98,20 +98,24 @@ bool compareByFirst(const Pair& a, const Pair& b) {
 }
 
 void outputIsVectorEqualized(std::vector<Pair> vec) {
+    // Open output file
+    std::ofstream outputFile("out.txt", std::ios::binary);
+
     for (int i = 0; i < M; i++) {
         Pair temp = isColumnNumAndStr(i, true);
         if (temp.first != "" && temp.second != "") {
-            std::cout << "NE" << std::endl;
+            outputFile << "NE" << std::endl;
             return;
         }
     }
 
     std::sort(vec.begin(), vec.end(), compareByFirst);
 
-    std::cout << "DA" << std::endl;
+    outputFile << "DA" << std::endl;
     for (int i = 0; i < vec.size(); i++) {
-        std::cout << vec[i].first << " " << vec[i].second << std::endl;
+        outputFile << vec[i].first << " " << vec[i].second << std::endl;
     }
+    outputFile.close();
 }
 
 int main() {
@@ -124,8 +128,8 @@ int main() {
 
     auto end = std::chrono::high_resolution_clock::now();
 
-    auto time = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+    double time = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
 
-    std::cout << "time: " << time << std::endl;
+    std::cout << "time: " << time / 1000 << std::endl;
     return 0;
 }
