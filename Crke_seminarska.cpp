@@ -118,9 +118,16 @@ void outputIsVectorEqualized(std::vector<Pair> vec) {
     outputFile.close();
 }
 
-int main() {
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        std::cerr << "Not enough arguments" << std::endl;
+        return 1;
+    }
+
+    std::string inputFilename = argv[1];
+
     auto start = std::chrono::high_resolution_clock::now();
-    parseData(files[4]);
+    parseData(inputFilename);
 
     std::vector<Pair> result = bruteForce();
 
